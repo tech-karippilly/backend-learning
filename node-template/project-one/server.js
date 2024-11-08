@@ -23,6 +23,15 @@ app.get('/cards',(req,res)=>{
     res.render('cards',{title:'Card Example',items})
 })
 
+app.get('/button',(req,res)=>{
+    res.render('button',{title:'Button Example'})
+})
+
+app.get('/table',(req,res)=>{
+    res.render('table',{title:'Table Example'})
+})
+
+
 
 app.listen(PORT,()=>{
     console.log(`Server is running ${BaseURL}:${PORT}`)
